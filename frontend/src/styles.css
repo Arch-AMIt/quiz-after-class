@@ -1,0 +1,155 @@
+/* ===============================
+   Global Reset & Base Styles
+   =============================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #f3f4f6, #e5e7eb);
+  color: #1f2937;
+}
+
+/* ===============================
+   Layout Container
+   =============================== */
+.container {
+  max-width: 850px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 36px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   Headings
+   =============================== */
+h1,
+h2 {
+  margin-bottom: 24px;
+  color: #111827;
+}
+
+/* ===============================
+   Form Inputs
+   =============================== */
+input,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* ===============================
+   Buttons
+   =============================== */
+button {
+  padding: 12px 22px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ===============================
+   Share Link Box
+   =============================== */
+.share-link {
+  margin-top: 20px;
+  padding: 14px;
+  background: #eef2ff;
+  border-radius: 8px;
+  font-size: 14px;
+  word-break: break-all;
+  border: 1px solid #c7d2fe;
+}
+
+/* ===============================
+   Quiz Question Card
+   =============================== */
+.question-card {
+  margin-bottom: 32px;
+  padding: 24px 28px;
+  border-radius: 14px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.question-card p {
+  font-weight: 600;
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+
+/* ===============================
+   Options (FINAL UX POLISH)
+   =============================== */
+.option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.option:hover {
+  background-color: #f1f5f9;
+}
+
+.option input[type="radio"] {
+  margin: 0;
+  flex-shrink: 0;
+  transform: scale(1.1);
+}
+
+.option-text {
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: nowrap;          /* keeps text in one line */
+}
+
+
+/* ===============================
+   Result Page
+   =============================== */
+.result-box {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.score {
+  font-size: 36px;
+  font-weight: bold;
+  color: #16a34a;
+  margin-top: 16px;
+}
